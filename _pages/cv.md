@@ -9,56 +9,51 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2001 – current : President – [Hobu, Inc](https://hobu.co)
+  * Hobu, Inc. is an open source software consultancy focused on LiDAR, point
+    clouds, and geospatial software. It has led the creation of [PDAL](https://pdal.org),
+    [COPC](https://copc.io), [Entwine](https://entwine.io), and [SilviMetric](https://silvimetric.com)
+    open source LiDAR software tools.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2001 – 2007: Systems Analyst I, II, & III – Iowa State University
+  * GIS software engineering, analysis, and design
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* 1998 – 2001: Graduate Research Assistant – Iowa State University
+
+
+Open Source Leadership
+======
+
+  <ul>{% for post in site.opensource reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* C, C++, Python
+* [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/en-us/), [GCS](https://cloud.google.com/)
+* LiDAR data management, compression, and exploitation
+* Open source software engineering, project management, and maintenance
+
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
+
+Education
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* M.S. Interdisciplinary Graduate Studies, Iowa State University, 2001
+* B.S. Agricultural Systems Technology, Iowa State University, 1998
+
+

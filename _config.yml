@@ -13,7 +13,7 @@ title                    : "howardbutler.com"
 title_separator          : "-"
 name                     : &name "Howard Butler"
 description              : &description "personal description"
-url                      : https://howardbutler.com/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://howardbutler.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hobu/howardbutler.com"
 
@@ -22,13 +22,13 @@ repository               : "hobu/howardbutler.com"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "howard-sliders-hat-1m.jpg"
   name             : "Howard Butler"
   pronouns         : # example: "she/her"
   bio              : "Short biography for the left-hand sidebar"
   location         : "Iowa City, IA"
   employer         : "Hobu, Inc"
-  uri              : # URL
+  uri              : "https://hobu.co" # URL
   email            : "howard@hobu.co"
 
   # Academic websites
@@ -37,7 +37,7 @@ author:
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-5340-1380"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
@@ -70,7 +70,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : https://x.com/howardbutler
+  twitter          : howardbutler
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -151,9 +151,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-QP74H1HBBT"
 
 
 # Reading Files
@@ -229,6 +229,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  opensource:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -284,6 +287,14 @@ defaults:
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+  # _opensource
+  - scope:
+      path: ""
+      type: opensource
+    values:
+      layout: single
       author_profile: true
       share: true
 

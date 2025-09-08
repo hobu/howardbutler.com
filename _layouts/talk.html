@@ -43,7 +43,21 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+
+      <ul>
+      {% if page.slidesurl %}
+      <li style="font-size: smaller"><a href="{{ page.slidesurl }}">Slides</a></li>
+      {% endif %}
+      {% if page.paperurl %}
+      <li style="font-size: smaller"><a href="{{ page.paperurl }}">Paper</a></li>
+      {% endif %}
+      {% if page.videourl %}
+      <li style="font-size: smaller"><a href="{{ page.videourl }}">Video</a></li>
+      {% endif %}
+      </ul>
+
       </section>
+
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
@@ -52,7 +66,6 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>

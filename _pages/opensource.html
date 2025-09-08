@@ -1,0 +1,15 @@
+---
+layout: archive
+title: "Open Source"
+permalink: /opensource/
+author_profile: true
+---
+
+I am an open source geospatial software developer who helps lead a number of
+widely used software projects. You can track most of my development activity by
+following my <a href="https://github.com/hobu">GitHub profile</a>. The following
+sections describe some of those efforts.
+
+{% for post in site.opensource reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}

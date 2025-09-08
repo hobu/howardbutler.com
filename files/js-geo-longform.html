@@ -1,0 +1,293 @@
+<p>Hello from the 90s</p>
+<p>My name is Howard Butler, and I don’t know very much JavaScript, I
+think I’m here because I’m good at tweeting pithy in-jokes for
+geospatial programmers who came up in the late 90s. We all know how well
+choosing people because of their tweeting abilities goes.</p>
+<p>I hope to provide more than tweet sized nuggets about platforms for
+geospatial software,</p>
+<p>overlay my software development history with recent GIS software
+history</p>
+<p>describe how platforms are mixing together faster than they were in
+the 90s and 2000s</p>
+<p>describe how good open source software systems <strong>build
+with</strong> rather than <strong>instead of</strong></p>
+<p>and talk about how this all relates to our now favorite computing
+platform</p>
+<p>– or at least the one for this conference – JavaScript</p>
+<p>Talking about the 90s also gives opportunity to cargo shorts in front
+of an audience.</p>
+<p>The foundation of one software civilization is the bones of
+another.</p>
+<p>Like many, I got to geospatial software development in an unplanned
+and happenstance way.</p>
+<p>While I had the 80s nerd starter kit of an Apple IIgs with BASIC, the
+reality that I would become someone who makes their living giving away
+software is still astonishing to me.</p>
+<p>I grew up on a corn and soybean farm in Southern Minnesota, and I
+spent many summer days and fall nights in the fields, helping to plant,
+maintain, or harvest crops.</p>
+<p>Throughout high school, I was given more responsibility and
+information about how to successfully grow a crop. Scratching out a
+living in the dirt was not just a metaphor, and I went to university
+looking to become better at it.</p>
+<p>I bounced around a few majors in college, including some computer
+engineering, before I settled on agriculture technology development. I
+even took a course series at Iowa State University conveniently
+nicknamed</p>
+<p>Dirt,</p>
+<p>Super Dirt,</p>
+<p>and Super Duper Dirt.</p>
+<p>Getting closer to graduation, I started looking into technologies
+that could really make a difference for crop farming in the upper
+Midwest,</p>
+<p>I came across a software program that would make that all crystal
+clear for me</p>
+<p>ArcView</p>
+<p>ArcView gave me the ability to overlay whatever I wanted.</p>
+<p>It’s like an automatic spurious relationship finder, especially in
+the hands of a newbie, and I was fantastic at using it to create
+horrific cartography and compute indescribable statistics of mostly just
+population maps of corn.</p>
+<p>Eventually, button and menu functionality weren’t enough for me or my
+major professor, and I needed script to graduate. Avenue my first real
+platform</p>
+<p>Avenue was a SmallTalk-related language that powered the GUI and data
+processing objects in ArcView.</p>
+<p>I had the basics of software development down –</p>
+<p>loops,</p>
+<p>conditionals,</p>
+<p>and swearing</p>
+<p>before I started with ArcView,</p>
+<p>but in the course of three or four years, I became a max-level Genji
+with Avenue.</p>
+<p>I could DPS my way through any analysis problem.</p>
+<p>I could sling vectors and rasters around with impunity, but despite
+my skills, I was pretty easy to one-shot.</p>
+<p>Avenue was a closed system with a weak software ecosystem.</p>
+<p>There was some user-to-user script sharing.</p>
+<p>It allowed scripts to call out to shared DLL libraries.</p>
+<p>DLLs brought entire software fields to ArcView.</p>
+<p>At the ESRI users conference, I saw powerline utilities mapping
+electrical grid energy state in real time button clicks. God, I know
+this sounds lame now, but in the time of cargo pants, it really
+wasn’t.</p>
+<p>ESRI became rootbound by the success of ArcView.</p>
+<p>The ecosystem integrated poorly with COM Windows connectivity
+APIs.</p>
+<p>If you think my cargo shorts are ugly, you should write some COM
+software</p>
+<p>ESRI pulled a Netscape and rewrote themselves from the ground up to
+be Windows First and Windows Everywhere.</p>
+<p>Along the way they jettisoned my GIS software technician security
+blanket – Avenue.</p>
+<p>During the transition, an ESRI Canada programmer named Bruce
+Dodson</p>
+<p>– he’s still there –</p>
+<p>posted a DLL that hooked Avenue to the Python programming
+language.</p>
+<p>Python 2.0 had just come out, and geospatial software in the Python
+space was dominated by GDAL and PROJ Python APIs</p>
+<p>yes I know those Python APIs still look like they did 18 years ago.
+eh-hem</p>
+<p>Python access gave me a transition path that allowed me to build upon
+my past work while giving me a massive productivity boost in a
+batteries-included language that also had an open source ethos.</p>
+<p>I jumped into Python and wrote an ArcView extension called avTerra
+that downloaded TMS map tiles into ArcView map views –</p>
+<p>except instead of TMS it was called Microsoft TerraServer and there
+was only one server on the whole internet,</p>
+<p>and instead of any sane URLs and JSON, it used this cargo shorts
+kinda thing called SOAP with XML to do its communication.</p>
+<p>Python gave me super powers, and I was able to use them to fill map
+views with ten-year-old 3 meter black and white imagery.</p>
+<p>I still take solace in knowing how many grad students I freed from
+the drudgery of digitizing from paper maps by allowing them to do heads’
+up digitizing in ArcView.</p>
+<p>Oh, right, the JavaScript.</p>
+<p>Actually, let’s go to Java for a minute first.</p>
+<p>The cargo shorts developer crowd was quite excited about the grand
+promise of Java in the 90s</p>
+<p>– write once, run everywhere –</p>
+<p>but the devils’ bargain to be struck was rewriting your software to
+live on the Java Virtual Machine.</p>
+<p>Sun being the lucky-but-incompetent Sun held tight to the JVM
+thinking it was their Twins which they could charge tribute to
+cross.</p>
+<p>Java succeeded poorly for many, especially in the 90s.</p>
+<p>Early on, the speed disparity between native code and Java was
+large.</p>
+<p>GUI programming in Java was the normal amount of programming hell
+plus dealing with Java’s Swing API.</p>
+<p>The dominant programming problem of the time was native windows
+applications, and 90s Java was poorly suited for it.</p>
+<p>Java didn’t exactly fail, it’s everywhere even today.</p>
+<p>The market transition to Java didn’t go as intended. It didn’t
+replacing everything and run everywhere.</p>
+<p>The bargain had too high a cost – porting working code to new
+environments creates new bugs in addition to carefully porting over your
+old ones.</p>
+<p>Jumping to the new environment meant tossing out once battle tested
+designs.</p>
+<p>Java poorly allowed systems to build upon their past, and the entire
+global software library had to be rebuilt from scratch</p>
+<p>Decades long investment still hasn’t produced a feature-parity pure
+Java GDAL or Proj.4 library.</p>
+<p>Instead of one-for-one replacing of existing systems, the Java
+attracted new development that wanted the advantage of the JVM, and
+older systems stayed where they were – ultimately tied to some C or
+Fortran compiler to native platforms.</p>
+<p>The JavaScript …</p>
+<p>Just a sec, let’s talk some more about platforms. In ten years, in
+2027, what platforms will still be alive?</p>
+<p>Windows should still be here.</p>
+<p>Microsoft proved that getting their heads bashed in on mobile can do
+wonders for their ability to think about software development
+platforms.</p>
+<p>They now make tools that play well with others.</p>
+<p>They build on and with things they didn’t actually make or
+control.</p>
+<p>They actually care that you’re using their tools.</p>
+<p>The Microsoft in the time of cargo shorts only sweatily claimed they
+did all this.</p>
+<p>Android will still be there.</p>
+<p>Android is our friend Java.</p>
+<p>It’s even GUI programming in Java too.</p>
+<p>Android is a platform with literally a billion users.</p>
+<p>iOS of course won’t be dead by then.</p>
+<p>iOS has the snobbiest installed base.</p>
+<p>Its jail-like pastiche, emphasis on security, and stockhom syndrome
+users won’t be giving it up.</p>
+<p>OSX will be dead by then. OSX is the Lannisters of platforms.</p>
+<p>It needs to pay off its technical debt at the Iron Bank of Bravos</p>
+<p>It looks pretty but kills everything it touches.</p>
+<p>Linux of course.</p>
+<p>As a containerized platform, or a platform of containers.</p>
+<p>Either way, Linux is the 78 percent nitrogen in the air of platforms
+– it is so assumed we don’t bother to think about it.</p>
+<p>Finally, the one we care about, JavaScript. Every browser has a
+JavaScript engine, and just about every computer has a browser.
+JavaScript has <strong>billions</strong> of users.</p>
+<p>Server-side JavaScript is of course a thing too.</p>
+<p>This platform is as strong as ever as evidenced by this conference
+and its evolution from talking about novelty browser mapping
+capabilities to full scale replacements for the entire spectrum of
+GIS.</p>
+<p>I hate JavaScript –</p>
+<p>Ok, maybe that’s a rather cliche thing to say.</p>
+<p>Maybe you all hate JavaScript too.</p>
+<p>I don’t hate JavaScript because the language is awful and
+arbitrary.</p>
+<p>I don’t hate JavaScript because of JavaScript Framework Bingo.</p>
+<p>I don’t hate JavaScript because because I think significant
+whitespace is a perfectly reasonable way to block code.</p>
+<p>I hate JavaScript because the platform once forced me into Java’s
+devils’ bargain that included rewriting everything I had already
+written.</p>
+<p>Have a thirty year old, battle tested cartographic projection
+library?</p>
+<p>Rewrite that sucker in JavaScript so you can reproject 4326 into Web
+Mercator and UTM.</p>
+<p>Half-ass the other methods, because who really needs support for any
+other coordinate systems anyway?</p>
+<p>Partially implement the geometry algebra in JavaScript you need to
+split some polygons or compute their union?</p>
+<p>Ditch on the crazy fractal of numerical edge cases that start popping
+out when you implement the full 9IM.</p>
+<p>Need to translate data from esoteric geospatial format elevation
+format to another?</p>
+<p>Like plastics, my boy, reimplementing format translators for every
+computing platform is still a growth industry.</p>
+<p>Want to handroll a JavaScript implementation of a lidar compression
+and decompression engine?</p>
+<p>Good work if you can find someone who’ll pay for it.</p>
+<p>You get my point, but we often keep our head down and climb the
+JavaScript reimplementation hill in front of us.</p>
+<p>Do I really look like I climb hills?</p>
+<p>All of the platforms I described earlier aren’t equal, but they all
+have something that can target them</p>
+<p>LLVM</p>
+<p>LLVM is just a name now, although low-level virtual machine might
+once have been a fitting acronym.</p>
+<p>It has quietly infiltrated nearly all of your developer tools in
+recent years.</p>
+<p>Native mobile developer tooling and continual investment in LLVM by
+Apple pushed it over the threshold of nearly everyone building off it
+directly or supporting it.</p>
+<p>LLVM is compiler technology. It’s different than others in that it
+breaks the compilation problem up into pieces.</p>
+<p>The typical compiler scenario we all might think of is having a C++
+frontend and a machine backend that is x86 assembly.</p>
+<p>Or how about a Python frontend and a JVM backend?</p>
+<p>Or, even better for me, a C++ frontend and a JavaScript backend!</p>
+<p>This exists today.</p>
+<p>You can use the LLVM toolchain to compile C/C++ into LLVM
+intermediate representation and target JavaScript as a backend.</p>
+<p>The tools to google are asm.js, WebAssembly, and Emscripten.</p>
+<p>These tools are in use today.</p>
+<p>My company, Hobu, Inc used them to compile the C++ LASzip lidar
+compression library into a javascript module that only performs a few
+multiples slower in a browser than it does on bare metal.</p>
+<p>Every release tick of the browser and every release tick of the
+compiler stack has made that multiple decrease. We haven’t had to do any
+work. Just recompile.</p>
+<p>It’s not a panacea. Compiling the library to JavaScript actually
+forced us to completely refactor the LASzip library in a way that was
+probably equivalent to porting it to a new platform. At the time,
+Emscripten implemented every c++ virtual table dereference as a function
+call in JavaScript.</p>
+<p>This meant a simple dereference of a variable was three or four
+function calls.</p>
+<p>It took a month to refactor it, and along the way, we added open
+source niceties like tests.</p>
+<p>If we had simply ported it to JavaScript, we’d have burned a month
+forking the library with yet another implementation.</p>
+<p>More chances for bugs.</p>
+<p>More software to silently fall out of date.</p>
+<p>More compatibility to lose.</p>
+<p>LLVM in JavaScript – and all its other backends – enables what I call
+the “Rotten Core” development model .</p>
+<p>Programmers are very good at detecting rotten code.</p>
+<p>It’s quite easy, really.</p>
+<p>Anything not written by they themselves is rotten.</p>
+<p>More seriously, Rotten Core plus the LLVM stuff means we don’t have
+to make the platform devils’ bargain.</p>
+<p>We can abide with the embedded lessons that decades’ old software
+libraries can provide our modern software without abiding their outdated
+APIs.</p>
+<p>https://twitter.com/arnicas/status/856569143021236224</p>
+<p>Lynn doesn’t like GDAL’s API, but usable here means <strong>usable to
+her</strong> in her context.</p>
+<p>What Lynn really wants an abstraction layer to GDAL’s power within
+the context of language and programming idioms she knows.</p>
+<p>rasterio is the most idiomatic Python raster processing library. It’s
+all GDAL underneath, but it protects users from the most jagged bits by
+hiding the necessarily complex GDAL API.</p>
+<p>rasterio is Rotton Core in the sense that it hides all the
+rotton-to-me stuff and wraps it with a convenient and idiomatic API that
+has meaning within my own programming context.</p>
+<p>With LLVM, Emscripten, and JavaScript, we can start doing the same
+thing in our favorite browser platforms too.</p>
+<p>I took over maintenance of the Proj.4 library after Frank Warmerdam
+moved on.</p>
+<p>Proj.4 is a little unique in our industry because it is so old –
+almost 35 years.</p>
+<p>It’s everywhere, and it’s going to continue to be everywhere for an
+unpredictably long time.</p>
+<p>The reason why is it solves such a fundamental problem of our domain
+that once solved, doesn’t really need to be solved over and over
+again.</p>
+<p>Software libraries that condense knowledge of data formats and math –
+think GDAL and Proj.4 – are going to be around for a very long time.
+Longer than any of our careers.</p>
+<p>They are heirlooms that will be patched up, recompiled and
+retargeted, and gussied up for their new usages.</p>
+<p>It is folly to reimplement them just to reach a new platform,
+especially now that Rotton Core programming can work in JavaScript in
+the same way it might in any native language.</p>
+<p>JavaScript is just another platform, and the tools are maturing
+enough that we can treat it like any other one we’ve been building
+boring geospatial software on for decades.</p>
+<p>I hope you’ll think of LLVM, Emscripten, and Rotten Core before you
+dive into some brownfield reimplementation of an open source library
+that’s been around for 20 years. Don’t think all those pockets aren’t on
+there for a reason.</p>
