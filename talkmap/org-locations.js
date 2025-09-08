@@ -1,22 +1,17 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.4893335,
-    -0.14405508452768728
+    "Open Source GIS Hacks<br />Open Source GIS Conference '05; Minneapolis, MN, USA",
+    44.9772995,
+    -93.2654692
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Hello from the 90s \u2013 JS.Geo<br />FOSS4G 2017; Boston, MA, USA",
+    42.3554334,
+    -71.060511
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
-  ],
-  [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "A history, status report, and outlook of Proj.4<br />FOSS4G 2017; Boston, MA, USA",
+    42.3554334,
+    -71.060511
   ]
 ];
