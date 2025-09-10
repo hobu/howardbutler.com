@@ -25,7 +25,7 @@ author:
   avatar           : "howard-sliders-hat-1m.jpg"
   name             : "Howard Butler"
   pronouns         : # example: "she/her"
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Point clouds. Open source. <a href=\"https://pdal.org\">PDAL</a>, <a href=\"https://gdal.org\">GDAL</a>, <a href=\"https://entwine.io\">Entwine</a>, <a href=\"https://copc.io\">COPC</a> and others. non-contributor corporate entity leading <a href=\"https://hobu.co\">Hobu, Inc.</a>"
   location         : "Iowa City, IA"
   employer         : "Hobu, Inc"
   uri              : "https://hobu.co" # URL
